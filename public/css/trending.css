@@ -1,0 +1,296 @@
+.trending-page {
+    min-height: 100vh;
+    padding: 60px;
+}
+
+.trending-header {
+    margin-bottom: 50px;
+}
+
+.trending-header h1 {
+    margin-bottom: 14px;
+    font-size: 42px;
+}
+
+.trending-header p {
+    color: #888;
+    line-height: 1.7;
+}
+
+/* ----- 3 teratas ----- */
+.top-three {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1fr;
+    gap: 22px;
+    align-items: end;
+    margin-bottom: 80px;
+}
+
+.top-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #191922;
+    transition: 0.4s;
+}
+
+.top-card:hover {
+    transform: translateY(-8px);
+}
+
+.top-card.first {
+    min-height: 500px;
+}
+
+.top-card.second,
+.top-card.third {
+    min-height: 450px;
+}
+
+.top-card img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.2) 70%);
+}
+
+.rank-number {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 3;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.top-info {
+    position: absolute;
+    z-index: 3;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+}
+
+.rank-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #a855f7;
+}
+
+.top-info h2 {
+    margin: 10px 0 14px;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.first .top-info h2 {
+    font-size: 28px;
+}
+
+.top-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.top-meta span:first-child {
+    color: #ffd700;
+}
+
+.top-info p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* ----- daftar ranking ----- */
+.trending-list-section {
+    margin-bottom: 80px;
+}
+
+.list-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.page-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #a855f7;
+}
+
+.list-heading h2 {
+    margin-top: 8px;
+    font-size: 26px;
+}
+
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ranking-item {
+    display: grid;
+    grid-template-columns: 55px 70px 1fr 130px 60px;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 20px;
+    background-color: #191922;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.ranking-item:hover {
+    background-color: #20202a;
+    border-color: #30303a;
+}
+
+.ranking-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.ranking-item img {
+    width: 55px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.ranking-info h3 {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.ranking-info p {
+    color: #777;
+    font-size: 13px;
+}
+
+.ranking-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #999;
+    font-size: 13px;
+}
+
+.ranking-stat span:first-child {
+    color: #ffd700;
+}
+
+.trend-up {
+    color: #4ade80;
+    font-size: 13px;
+}
+
+.trend-down {
+    color: #f87171;
+    font-size: 13px;
+}
+
+.trend-same {
+    color: #666;
+    font-size: 13px;
+}
+
+/* ----- genre trending ----- */
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.genre-card {
+    min-height: 150px;
+    padding: 28px;
+    background-color: #191922;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.genre-card:hover {
+    transform: translateY(-5px);
+    background-color: #20202a;
+}
+
+.genre-card span {
+    font-size: 30px;
+}
+
+.genre-card h3 {
+    margin: 16px 0 6px;
+    font-size: 18px;
+}
+
+.genre-card p {
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 1000px) {
+    .trending-page {
+        padding: 40px 20px;
+    }
+
+    .top-three {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .top-card.first {
+        grid-column: span 2;
+        min-height: 500px;
+    }
+
+    .genre-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .trending-header h1 {
+        font-size: 32px;
+    }
+
+    .top-three {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-card,
+    .top-card.first,
+    .top-card.second,
+    .top-card.third {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .ranking-item {
+        grid-template-columns: 35px 55px 1fr 45px;
+        gap: 14px;
+    }
+
+    .ranking-stat {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .genre-grid {
+        grid-template-columns: 1fr;
+    }
+}

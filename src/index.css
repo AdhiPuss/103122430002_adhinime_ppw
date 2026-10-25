@@ -1,0 +1,25 @@
+.btn-role {
+  padding: 8px 14px;
+  background-color: #2a2a36;
+  border: 1px solid #3a3a48;
+  border-radius: 20px;
+  color: #ddd;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-role:hover,
+.btn-role.aktif {
+  background-color: #a855f7;
+  border-color: #a855f7;
+  color: white;
+}
+
+.belum-ada {
+  padding: 70px 20px;
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+  border: 1px dashed #292934;
+  border-radius: 10px;
+}
