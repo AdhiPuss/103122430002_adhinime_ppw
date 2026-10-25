@@ -3,7 +3,7 @@ import usePageCss from '../hooks/usePageCss'
 import FormAnime from './FormAnime'
 import TabelAnime from './TabelAnime'
 
-// props: daftarAnime, onTambah, onUbah, onHapus
+
 function Admin({ daftarAnime, onTambah, onUbah, onHapus }) {
   usePageCss(['/css/admin.css'])
 
