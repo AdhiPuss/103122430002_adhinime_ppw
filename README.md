@@ -10,9 +10,9 @@
 - Class Validator
 
 ## Struktur Proyek
-- `frontend/` – Tampilan dan antarmuka website.
-- `backend/` – Backend menggunakan NestJS dengan struktur MVC.
-- `backend/src/anime/` – Resource Anime yang menangani operasi CRUD.
+- `adhinime-frontend/` – Tampilan dan antarmuka website.
+- `adhinime-backend/` – Backend menggunakan NestJS dengan struktur MVC.
+- `adhinime-backend/src/anime/` – Resource Anime yang menangani operasi CRUD.
 
 ## Fitur
 - Menampilkan daftar anime.
@@ -36,14 +36,14 @@
 
 **Backend:**
 ```bash
-cd backend
+cd adhinime-backend
 npm install
 npm run start:dev
 ```
 
 **Frontend:**
 ```bash
-cd frontend
+cd adhinime-frontend
 npm install
 npm run dev
 ```
