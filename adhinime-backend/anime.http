@@ -1,0 +1,47 @@
+@baseUrl = http://localhost:3000
+
+### 1. POST - Tambah Anime
+POST {{baseUrl}}/anime
+Content-Type: application/json
+
+{
+  "judul": "Sousou no Frieren",
+  "gambar": "https://example.com/frieren.jpg",
+  "genre": ["Adventure", "Fantasy"],
+  "rating": 9.3,
+  "episode": 28,
+  "status": "tamat",
+  "popularitas": 95,
+  "tren": 90,
+  "sinopsis": "Perjalanan Frieren setelah mengalahkan Raja Iblis."
+}
+
+### 2. GET - Semua Anime
+GET {{baseUrl}}/anime
+
+### 3. GET - Anime Berdasarkan ID
+GET {{baseUrl}}/anime/1
+
+### 4. PATCH - Update Anime
+PATCH {{baseUrl}}/anime/1
+Content-Type: application/json
+
+{
+  "rating": 9.5,
+  "popularitas": 98
+}
+
+### 5. DELETE - Hapus Anime
+DELETE {{baseUrl}}/anime/1
+
+### 6. GET - Tes Error Not Found
+GET {{baseUrl}}/anime/1
+
+### 7. POST - Tes Error Conflict
+POST {{baseUrl}}/anime
+Content-Type: application/json
+
+{
+  "judul": "Sousou no Frieren",
+  "status": "tamat"
+}
