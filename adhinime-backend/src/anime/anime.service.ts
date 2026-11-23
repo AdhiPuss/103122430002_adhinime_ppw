@@ -4,9 +4,9 @@ import {
   ConflictException,
 } from '@nestjs/common';
 
-import { Anime } from './entities/anime.entity';
-import { CreateAnimeDto } from './dto/create-anime.dto';
-import { UpdateAnimeDto } from './dto/update-anime.dto';
+import { Anime } from './entities/anime.entity.js';
+import { CreateAnimeDto } from './dto/create-anime.dto.js';
+import { UpdateAnimeDto } from './dto/update-anime.dto.js';
 
 @Injectable()
 export class AnimeService {

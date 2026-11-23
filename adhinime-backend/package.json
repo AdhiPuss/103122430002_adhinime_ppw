@@ -1,6 +1,7 @@
 {
   "name": "adhinime-backend",
   "version": "0.0.1",
+  "type": "module",
   "description": "",
   "author": "",
   "private": true,
@@ -23,7 +24,7 @@
   "dependencies": {
     "@nestjs/common": "^12.0.1",
     "@nestjs/core": "^12.0.1",
-    "@nestjs/mapped-types": "*",
+    "@nestjs/mapped-types": "^12.0.1",
     "@nestjs/observe": "^0.3.0",
     "@nestjs/platform-express": "^12.0.1",
     "class-transformer": "^0.5.1",

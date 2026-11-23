@@ -9,9 +9,9 @@ import {
   ParseIntPipe,
 } from '@nestjs/common';
 
-import { AnimeService } from './anime.service';
-import { CreateAnimeDto } from './dto/create-anime.dto';
-import { UpdateAnimeDto } from './dto/update-anime.dto';
+import { AnimeService } from './anime.service.js';
+import { CreateAnimeDto } from './dto/create-anime.dto.js';
+import { UpdateAnimeDto } from './dto/update-anime.dto.js';
 
 @Controller('anime')
 export class AnimeController {
