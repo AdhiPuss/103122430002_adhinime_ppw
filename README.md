@@ -51,7 +51,7 @@ npm run dev
 Backend berjalan pada port 3000 dan frontend menggunakan port 5173.
 
 ## Penyimpanan Data
-Data anime disimpan sementara menggunakan array di dalam memori backend.
+Data anime disimpan sementara menggunakan array di dalam memori backend.Jadi jika hanya melakukan running pada frontend saja, datanya akan kosong. Untuk pengujian server ada di `anime.http` di dalam folder `adhinime-backend`
 
 ## Dokumentasi
-Screenshot tahapan pengerjaan tersedia di `backend/docs/screenshots/`.
+Screenshot tahapan pengerjaan tersedia di `./screenshot/Bab 9 Nest Js`.
